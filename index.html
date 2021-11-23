@@ -1,0 +1,225 @@
+<html>
+
+<head>
+    <title>Case Study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h1>CASE STUDY BETWEEN GOOGLE LENS AND MOBILENET</h1>
+
+        <span id="google1">Google Lens <img id="google" src="google-lens4627.jpg"></span>
+        <br>
+
+        <p>vs</p>
+
+        <br>
+        <h2>Mobilenet</h2>
+        <ol>
+            <div class="test_image_and_result col-xs-12">
+
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image - </b>
+                    <img src="GUEST_16b2290b-fa89-4b80-b4b3-84b19e8c7fa3.jpg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12" id="google_lens">
+                    Output on <b>Google Lens</b> -
+                    <span>Water Bottle</span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12" id="mobilenet">
+                    Output on <b>Mobilenet Model</b> -
+                    <span>Water Bottle </span>
+                </h5>
+                <br>
+                <br>
+                <hr>
+                <div class="mini_result" class="col-xs-12">
+
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>Both are EQUAL</h4>
+
+                </div>
+
+            </div>
+        </ol>
+
+        <br>
+        <br>
+
+
+        <div class="test_image_and_result1 col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image - </b>
+                <img src="WhatsApp Image 2021-11-22 at 6.42.21 PM.jpeg" class="img-responsive">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12" id="google_lens1">
+                Output on <b>Google Lens</b> -
+                <span>Island of the Blue Dolphins Book</span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12" id="mobilenet1">
+                Output on <b>Mobilenet Model</b> -
+                <span>Book</span>
+            </h5>
+            <br>
+            <br>
+            <hr>
+            <div class="mini_result1" class="col-xs-12">
+
+                <h4>Result - </h4>
+                <hr>
+                <h4>Google Lens is MORE Accurate</h4>
+
+            </div>
+
+        </div>
+        <br>
+        <br>
+
+
+
+
+
+
+
+
+
+
+        <div class="test_image_and_result1 col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image - </b>
+                <img src="WhatsApp Image 2021-11-22 at 6.42.22 PM.jpeg" class="img-responsive">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12" id="google_lens1">
+                Output on <b>Google Lens</b> -
+                <span>Backpack</span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12" id="mobilenet1">
+                Output on <b>Mobilenet Model</b> -
+                <span>Backpack</span>
+            </h5>
+            <br>
+            <br>
+            <hr>
+            <div class="mini_result1" class="col-xs-12">
+
+                <h4>Result - </h4>
+                <hr>
+                <h4>Both are EQUAL</h4>
+
+            </div>
+
+        </div>
+        <br>
+        <br>
+
+        <div class="test_image_and_result1 col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image - </b>
+                <img src="WhatsApp Image 2021-11-22 at 6.42.23 PM.jpeg" class="img-responsive">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12" id="google_lens2">
+                Output on <b>Google Lens</b> -
+                <span>Mouse Golden Garden</span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12" id="mobilenet2">
+                Output on <b>Mobilenet Model</b> -
+                <span>Mouse</span>
+            </h5>
+            <br>
+            <br>
+            <hr>
+            <div class="mini_result2" class="col-xs-12">
+
+                <h4>Result - </h4>
+                <hr>
+                <h4>Google Lens is MORE Accurate</h4>
+
+            </div>
+
+        </div>
+
+
+        <br>
+        <br>
+
+        <div class="test_image_and_result1 col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image - </b>
+                <img src="WhatsApp Image 2021-11-22 at 6.42.24 PM.jpeg" class="img-responsive">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12" id="google_lens2">
+                Output on <b>Google Lens</b> -
+                <span>Electric Fireplace from Amazon</span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12" id="mobilenet2">
+                Output on <b>Mobilenet Model</b> -
+                <span>Fireplace</span>
+            </h5>
+            <br>
+            <br>
+            <hr>
+            <div class="mini_result2" class="col-xs-12">
+
+                <h4>Result - </h4>
+                <hr>
+                <h4>Google Lens is MORE Accurate</h4>
+
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="result_bottom col-xs-12">
+            <label id="black">I used 5 test images</label><br>
+      
+            <span id="red">GOOGLE LENS <label class="black">have predicted 3 of them more accurately.</label></span>
+   <br>
+            <label class="black">MOBILENET was less accurate than Google Lens</label>
+<br>
+            <span id="red"><label class="black">According to my case study </label> GOOGLE LENS <label
+                    class="black">is more Accurate.</label></span>
+
+
+
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </center>
+
+
+</body>
+
+</html>
